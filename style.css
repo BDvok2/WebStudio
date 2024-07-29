@@ -1,67 +1,81 @@
 :root {
-    --main-bg-color: #2F303A;
-    --main-text-color: #212121;
-    --second-text-color: #757575;
-    --button-color: #2196F3;
+  --main-bg-color: #2F303A;
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --button-color: #2196F3;
+  --second-bg: #F5F4FA;
 
+  /* Наша команда */
+  --team-photo-height: 260px;
+  --team-photo-width: 270px;
+  
+  /* Чим ми займаємося */
+  --work-photo-height: 294px;
+}
 
-    /* Наша команда */
-    --team-photo-height: 260px;
-    --team-phto-width: 270px;
-    
-    /* Чим ми займаємося */
-    --work-photo-height: 294px;
-  }
+main {
+  padding: 0 auto;
+}
 
-
-  main{
-    padding: 0 auto;
-  }
-
-#navigation{
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+.navigation{
   display: flex;
   gap: 50px;
+ 
+}
+
+.navigation1{
+  
+  display: flex;
+  gap: 50px;
+  margin-right: 340px;
+}
+.navigation li{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  
   
 }
 
-
-#bar{
-  
-
+.bar {
   display: flex;
   justify-content: center;
-  gap: 340px;
+  align-items: center;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  
+  
 }
 
-#Logo{
+.bar ul{
+  list-style: none;
+}
+
+
+.logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   border: none;
   font-weight: 700;
   font-size: 26px;
-  
+  margin-right: 94px;
 }
-#logo-web{
+
+.logo-web {
   color: var(--button-color);
-
 }
 
-#navPart{
+.nav-part {
   text-decoration: none;
 }
 
-
-body{
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-
-#intro{
+.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,105 +90,135 @@ body{
   color: #FFFFFF;
 }
 
-
-#rules ul{
+.rules ul {
   display: flex;
   list-style: none;
   width: 1170px;
-
 }
 
-#rules ul li h3{
+.rules ul li h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: var(--main-text-color);
 }
-#rules ul li p{
+
+.rules ul li p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--second-text-color);
 }
 
-#jobs{
+.jobs {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-#jobs h2{
+.jobs h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 42.19px;
-  
-
 }
-#jobs ul{
+
+.jobs ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#workers{
+.workers {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
-#workers h2{
+
+.workers h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
 }
 
-#workers ul{
+.workers ul {
   display: flex;
-
 }
 
-
-footer{
+footer {
   background: var(--main-bg-color);
-  
+  width: 100%;
   color: var(--second-text-color);
-
 }
 
-footer address{
+footer address {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-
 }
 
-#location{
+.location {
   color: white;
 }
 
-footer a{
+footer a {
   color: white;
 }
 
-header a{
-  color:black
+header a {
+  color: black;
 }
 
-
-
-main section button{
+main section button {
   background-color: var(--button-color);
   border: none;
   color: white;
   width: 216px;
   height: 50px;
   border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+
+.jobs ul{
+  gap: 30px;
+  list-style: none;
+  
+}
+
+.workers{
+  background-color: var(--second-bg);
+  width: 100%;
+}
+
+.workers ul{
+  gap: 30px;
+  list-style: none;
   
 }
 
 
+footer div div{
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
 
 
+footer div div a{
+  margin-bottom: 20px;
+}
+
+.button-bar{
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
 
 
+.button-bar li{
+  padding: 0 auto;
+}
