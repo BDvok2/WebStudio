@@ -15,11 +15,13 @@
 
 main {
   padding: 0 auto;
+  
 }
 
 .navigation{
   display: flex;
   gap: 50px;
+  
  
 }
 
@@ -29,13 +31,22 @@ main {
   gap: 50px;
   margin-right: 340px;
 }
-.navigation li{
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  
-  
+
+.navigation a{
+  color: #757575;
 }
+
+
+/* hover */
+
+.navigation1 a:hover{
+  color: #2196F3;
+}
+
+.navigation a:hover{
+  color: #2196F3;
+}
+
 
 .bar {
   display: flex;
@@ -44,8 +55,14 @@ main {
   margin-top: 31px;
   margin-bottom: 31px;
   
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  
+  
   
 }
+
 
 .bar ul{
   list-style: none;
@@ -80,35 +97,95 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   
-  line-height: 60px;
-  letter-spacing: 6%;
-  font-weight: 900;
   height: 600px;
   font-family: "Roboto", sans-serif;
-  background-color: var(--main-bg-color);
-  color: #FFFFFF;
+  background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(17,17,17,0.4) 100%), url("img/bg.png");
 }
+
+.intro h1{
+  color: white;
+  font-family: "Roboto", "sans-serif";
+  font-size: 44px;
+  line-height: 60px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.unusefulcontainer{
+  width: 696px;
+  text-align: center;
+
+}
+
+/* 
+
+.rules{
+  display: flex;
+  justify-content: center;
+} */
 
 .rules ul {
   display: flex;
   list-style: none;
   width: 1170px;
+  gap: 30px;
 }
 
-.rules ul li h3 {
+.rules li h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: var(--main-text-color);
 }
 
-.rules ul li p {
+.rules li p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--second-text-color);
+  
 }
+
+
+.icon{
+  width: calc((100% - 90px)/4 );
+  
+
+  
+}
+
+.icon::before{
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: #F5F4FA;
+  
+}
+
+.icon:first-child::before{
+  background-image: url(img/icons/antenna.svg);
+
+}
+
+.icon:nth-child(2)::before{
+  background-image: url(img/icons/clock\ 1.svg);
+}
+.icon:nth-child(3)::before{
+  background-image: url(img/icons/diagram\ 1.svg );
+}
+.icon:nth-child(4)::before{
+  background-image: url(img/icons/diagram\ 1.svg);
+}
+
 
 .jobs {
   display: flex;
@@ -129,16 +206,39 @@ body {
   justify-content: center;
 }
 
+.workers li{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .workers {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 }
 
 .workers h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
+}
+
+
+.workers h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.workers p{
+  margin-top: -10px;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 .workers ul {
@@ -169,7 +269,11 @@ header a {
   color: black;
 }
 
-main section button {
+.intro{}
+
+
+
+.intro button {
   background-color: var(--button-color);
   border: none;
   color: white;
@@ -181,6 +285,9 @@ main section button {
 .container {
   margin: 0 auto;
   width: 1170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -219,6 +326,54 @@ footer div div a{
 }
 
 
-.button-bar li{
-  padding: 0 auto;
+.button-bar button{
+  background-color: #F5F4FA;
+  border: none;
+  color: #212121;
+ 
+  height: 50px;
+  border-radius: 5px;
+  padding: 14px 25px;
+
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+
+.button-bar button:hover{
+  color: white;
+  background-color: #2196F3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.imggrid img{
+  width: 370px;
+  height: 294px;
+}
+.imggrid ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 30px; 
+  list-style: none;
+  
+}
+
+.imggrid li{
+  outline: solid #EEEEEE 1px;
+  
+}
+
+.imggrid li:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imggrid p, .imggrid h3{
+  
+  padding-left: 27px;
+}
+
