@@ -4,49 +4,34 @@
   --second-text-color: #757575;
   --button-color: #2196F3;
   --second-bg: #F5F4FA;
-
-  /* Наша команда */
   --team-photo-height: 260px;
   --team-photo-width: 270px;
-  
-  /* Чим ми займаємося */
   --work-photo-height: 294px;
 }
 
 main {
   padding: 0 auto;
-  
 }
 
-.navigation{
+.navigation {
   display: flex;
   gap: 50px;
-  
- 
 }
 
-.navigation1{
-  
+.navigation1 {
   display: flex;
   gap: 50px;
   margin-right: 340px;
 }
 
-.navigation a{
+.navigation a {
   color: #757575;
 }
 
-
-/* hover */
-
-.navigation1 a:hover{
+.navigation1 a:hover,
+.navigation a:hover {
   color: #2196F3;
 }
-
-.navigation a:hover{
-  color: #2196F3;
-}
-
 
 .bar {
   display: flex;
@@ -54,20 +39,20 @@ main {
   align-items: center;
   margin-top: 31px;
   margin-bottom: 31px;
-  
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   
-  
-  
 }
 
-
-.bar ul{
+.bar ul {
   list-style: none;
+  
 }
 
+.bar a{
+  color: #212121;
+}
 
 .logo {
   text-decoration: none;
@@ -76,6 +61,7 @@ main {
   font-weight: 700;
   font-size: 26px;
   margin-right: 94px;
+  color: #212121;
 }
 
 .logo-web {
@@ -98,35 +84,24 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  
   height: 600px;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(90deg, rgba(2,0,36,0.4) 0%, rgba(17,17,17,0.4) 100%), url("img/bg.png");
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url("img/bg.png");
 }
 
-.intro h1{
+.intro h1 {
   color: white;
   font-family: "Roboto", "sans-serif";
   font-size: 44px;
   line-height: 60px;
-
   display: flex;
   align-items: center;
-
 }
 
-.unusefulcontainer{
+.unusefulcontainer {
   width: 696px;
   text-align: center;
-
 }
-
-/* 
-
-.rules{
-  display: flex;
-  justify-content: center;
-} */
 
 .rules ul {
   display: flex;
@@ -147,18 +122,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: var(--second-text-color);
-  
 }
 
-
-.icon{
-  width: calc((100% - 90px)/4 );
-  
-
-  
+.icon {
+  width: calc((100% - 90px) / 4);
 }
 
-.icon::before{
+.icon::before {
   width: 270px;
   height: 120px;
   display: block;
@@ -168,24 +138,20 @@ body {
   background-position: center;
   background-size: 70px 70px;
   background-color: #F5F4FA;
-  
 }
 
-.icon:first-child::before{
+.icon:first-child::before {
   background-image: url(img/icons/antenna.svg);
-
 }
 
-.icon:nth-child(2)::before{
+.icon:nth-child(2)::before {
   background-image: url(img/icons/clock\ 1.svg);
 }
-.icon:nth-child(3)::before{
-  background-image: url(img/icons/diagram\ 1.svg );
-}
-.icon:nth-child(4)::before{
+
+.icon:nth-child(3)::before,
+.icon:nth-child(4)::before {
   background-image: url(img/icons/diagram\ 1.svg);
 }
-
 
 .jobs {
   display: flex;
@@ -206,19 +172,51 @@ body {
   justify-content: center;
 }
 
-.workers li{
+
+
+.portrait{
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
 }
+
+.social{
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.social button{
+  background-color: black;
+  border-radius: 100%;
+  border:  none;
+  width: 44px;
+  height: 44px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: #AFB1B8;
+  color: white;
+}
+.social button:hover{
+  background-color: #2196F3;
+  
+  
+}
+
 
 .workers {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+
+  background-color: var(--second-bg);
+  width: 200%;
+  padding: 0 auto;
+  
 }
 
 .workers h2 {
@@ -228,27 +226,86 @@ body {
 }
 
 
+
 .workers h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
-.workers p{
+.workers p {
   margin-top: -10px;
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
-.workers ul {
+.portraits {
   display: flex;
+  padding-left:  0px;
+  gap: 30px;
 }
 
+.portraits ul{
+  display: flex;
+  padding-left: 0px;
+  gap: 10px;
+  
+}
+
+
+
+
+
 footer {
+  padding: 66px 0;
   background: var(--main-bg-color);
-  width: 100%;
+  width: 100vw;
   color: var(--second-text-color);
+  display: flex;
+  align-items: center;
+  gap: 127px;
+}
+
+
+footer .logo{
+  color: white;
+}
+
+.footinfo {
+  padding-left: 215px;
+}
+
+.contact {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+  gap: 12px;
+  display: flex;
+  padding-left: 0px;
+}
+
+footer button {
+  background-color: #43444d;
+  border-radius: 100%;
+  border: none;
+  padding: 12px;
+}
+
+footer button:hover {
+  background-color: #2196F3;
+}
+
+footer button img {
+  width: 20px;
+  height: 20px;
 }
 
 footer address {
@@ -261,17 +318,10 @@ footer address {
   color: white;
 }
 
-footer a {
+footer a,
+header a {
   color: white;
 }
-
-header a {
-  color: black;
-}
-
-.intro{}
-
-
 
 .intro button {
   background-color: var(--button-color);
@@ -290,59 +340,58 @@ header a {
   flex-direction: column;
 }
 
-
 .jobs ul{
+  display: flex;
   gap: 30px;
   list-style: none;
-  
-}
-
-.workers{
-  background-color: var(--second-bg);
-  width: 100%;
-}
-
-.workers ul{
-  gap: 30px;
-  list-style: none;
-  
 }
 
 
-footer div div{
+
+.jobs li p{
+  color: white;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: linear-gradient(90deg, rgba(47,48,58,0.8) 0%, rgba(47,48,58,0.8) 100%);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  bottom: 90px;
+}
+
+
+
+footer div div {
   padding-top: 59px;
   padding-bottom: 59px;
 }
 
-
-footer div div a{
+footer div div a {
   margin-bottom: 20px;
 }
 
-.button-bar{
+.button-bar {
   display: flex;
   list-style: none;
   gap: 8px;
 }
 
-
-.button-bar button{
+.button-bar button {
   background-color: #F5F4FA;
   border: none;
   color: #212121;
- 
   height: 50px;
   border-radius: 5px;
   padding: 14px 25px;
-
-
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 400;
   font-size: 16px;
 }
 
-
-.button-bar button:hover{
+.button-bar button:hover {
   color: white;
   background-color: #2196F3;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -350,30 +399,71 @@ footer div div a{
 
 
 
-.imggrid img{
+
+.imggrid img {
   width: 370px;
   height: 294px;
 }
-.imggrid ul{
+
+.imggrid ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);    
-  gap: 30px; 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
   list-style: none;
-  
 }
 
-.imggrid li{
+.imggrid li {
   outline: solid #EEEEEE 1px;
-  
 }
 
-.imggrid li:hover{
+.imggrid li:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.imggrid p, .imggrid h3{
-  
+.imggrid p,
+.imggrid h3 {
   padding-left: 27px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.partners ul{
+  display: flex;
+  list-style: none;
+  gap:30px
+}
+
+.partners h3{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+
+}
+
+.partners img{
+  width: 106px;
+  height: 60px; 
+}
+.partners img{
+  border: solid #AFB1B8 1px;
+  padding: 18px 32px;
+  border-radius: 4px;
+}
+.partners  img:hover{
+  border-color: #2196F3;
+  
+}
+
 
