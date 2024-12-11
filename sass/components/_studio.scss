@@ -1,0 +1,267 @@
+// intro
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 600px;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url("../../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .intro h1 {
+    color: white;
+    font-family: "Roboto", "sans-serif";
+    font-size: 44px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .intro button {
+    background-color: $button-color;
+    border: none;
+    color: white;
+    width: 216px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+
+  .intro h1{
+    text-align: center;
+  }
+  
+
+//   intro
+
+
+
+// rules
+
+.rules ul {
+    
+    display: flex;
+    list-style: none;
+    width: 1170px;
+    gap: 30px;
+    
+  }
+  
+  .rules li h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $main-text-color;
+  }
+  
+  .rules li p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:$second-text-color;
+  }
+  
+  .icon {
+    width: calc((100% - 90px) / 4);
+  }
+  
+  .icon::before {
+    width: 270px;
+    height: 120px;
+    display: block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    background-color: $second-bg;
+  }
+  
+  .icon:first-child::before {
+    background-image: url(../../img/icons/antenna.svg);
+  }
+  
+  .icon:nth-child(2)::before {
+    background-image: url(../../img/icons/clock\ 1.svg);
+  }
+  
+  .icon:nth-child(3)::before{
+    background-image: url(../../img/icons/diagram\ 1.svg);
+  }
+  .icon:nth-child(4)::before {
+    background-image: url(../../img/icons/astronaut\ 1.svg );
+  }
+// rules
+
+
+// jobs
+
+.jobs ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  
+  
+  .jobs li p{
+    color: white;
+    width: 370px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: linear-gradient(90deg, rgba(47,48,58,0.8) 0%, rgba(47,48,58,0.8) 100%);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    bottom: 90px;
+  }
+
+  .jobs h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+  }
+  
+
+// jobs
+
+// workers
+.workers {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    background-color: $second-bg;
+    width: 100vw;
+    padding: 0 auto;
+    
+  }
+  
+  .workers h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  
+  
+  .workers h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .workers p {
+    margin-top: -10px;
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  .portraits {
+    display: flex;
+    padding-left:  0px;
+    gap: 30px;
+  }
+  
+  .portraits ul{
+    display: flex;
+    padding-left: 0px;
+    gap: 10px;
+     .portrait{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
+  }    
+  }
+  .portrait{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  .social{
+    list-style: none;
+    padding-bottom: 30px;
+    
+  }
+  
+  .social button{
+    background-color: black;
+    border-radius: 100%;
+    border:  none;
+    width: 44px;
+    height: 44px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #AFB1B8;
+    color: white;
+  }
+  .social button:hover{
+    background-color: #2196F3;
+  }
+  
+  //workers
+
+  //companies
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .partners ul{
+    display: flex;
+    list-style: none;
+    gap:30px
+  }
+  
+  .partners h3{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+  
+  }
+  
+  .partners img{
+    width: 106px;
+    height: 60px; 
+  }
+  .partners img{
+    border: solid #AFB1B8 1px;
+    padding: 18px 32px;
+    border-radius: 4px;
+  }
+  .partners  img:hover{
+    border-color: #2196F3;
+    
+  }
+  
+  

@@ -1,0 +1,109 @@
+@import "./variables";
+
+footer {
+    background: $main-bg-color;
+    width: 100vw;
+    color: $second-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 252px;
+    gap:90px;
+
+}
+footer .logo{
+    color: white;
+}
+.footinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footinfo{
+    color: $second-text-color;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-size: 14px;
+    width: 200px;
+}
+.location{
+    color: white;
+}
+
+
+
+.contact p{
+    font-family: "Roboto", "sans-serif";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.contact button{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba($color: white, $alpha: 0.1);
+    
+}
+
+.contact ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0px;
+}
+
+.emailsend p{
+    font-family: "Roboto", "sans-serif";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.email-int{
+    height: 50px;
+    width: 358px;
+    background-color: transparent;
+    border:  solid 1px rgba($color: white, $alpha: 0.3);
+    border-radius: 4px;
+    font-family: "Roboto", "sans-serif";
+    color: rgba($color: white, $alpha: 0.6);
+    text-indent: 15px;
+}
+
+.email-int-submit {
+   
+   
+    
+    margin-left: 14px;
+    background-color: $button-color;
+    
+    border-radius: 4px;
+    height: 50px;
+    width: 200px;
+
+    font-family: "Roboto", "sans-serif";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.email-int-submit div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-int-submit img{
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+}
+
+

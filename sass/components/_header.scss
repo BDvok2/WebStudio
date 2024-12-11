@@ -1,0 +1,72 @@
+@import "./variables";
+  .navigation-contact {
+    display: flex;
+    gap: 50px;
+   
+  }
+
+ 
+ 
+  .navigation-site{
+    display: flex;
+    gap: 50px;
+    margin-right: 340px;
+  }
+
+
+
+  
+.navigation-contact a:hover,
+.navigation-site a:hover{
+    color: $button-color;
+    border-bottom: $button-color 3px solid;
+    padding-bottom: 20px;
+    border-radius: 3px;
+  }
+  
+  .bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31px;
+    margin-bottom: 31px;
+    font-family: "Roboto", sans-serif;
+    
+    font-size: 14px;
+    
+  }
+  
+  .bar ul {
+    list-style: none;
+    
+  }
+  
+  .nav-part{
+    color: #212121;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+
+  .nav-part-contact{
+    color: #757575;
+    font-weight: 500;
+    text-decoration: none;
+
+  }
+  
+  .logo {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    border: none;
+    font-weight: 700;
+    font-size: 26px;
+    margin-right: 94px;
+    color: #212121;
+  }
+  
+  .logo-web {
+    color: $button-color;
+  }
+  
+  

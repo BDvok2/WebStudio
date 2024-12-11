@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="normalize.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +22,14 @@
                 
                 
                 
-                <ul class="navigation1">
+                <ul class="navigation-site">
                     <li><a class="nav-part" href="index.html">Студія</a></li>
                     <li><a class="nav-part" href="portfolio.html">Портфоліо</a></li>
                     <li><a class="nav-part" href="#">Контакти</a></li>
                 </ul>
-                <ul class="navigation">
-                    <li><a class="nav-part" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="nav-part" href="tel:+380961111111">+380961111111</a></li>
+                <ul class="navigation-contact">
+                    <li><a class="nav-part-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="nav-part-contact" href="tel:+380961111111">+380961111111</a></li>
                 </ul>
             </section>
             
@@ -38,29 +38,29 @@
     </header>
     <main class="container">
         <section class="intro">
-            <div class="unusefulcontainer">
-                <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br> ВАШОГО БІЗНЕСУ</h1>
                 
-                <button class="btn-open" data-modal-open>ЗАМОВИТИ ПОСЛУГУ</button>
-                <div class="backdrop is-hidden"  data-modal>
-                    <div class="modal">
-                        
-                        <button style="background-color: transparent; border: rgba(0, 0, 0, 0.8); padding: 6px; color: #0B0E66;" class="btn" data-modal-close
-                        ><img  width="18" height="18" src="img/icons/cross.svg" alt=""></button>
-                        <form action="login">
-                            <label class="titleform" for="">Залиште свої дані, ми вам передзвонимо</label>
-                            <label for="">Ім'я <input type="text" ></label>
-                        
-                            <label  for="">Телефон<input type="text" ></label>
-                            <label for="">Пошта <input type="email"></label>
-                            <label for="">Коментар<textarea name="" id="" cols="30" rows="5"></textarea></label>
-                            <label class="Agree" for=""><input class="comment" type="checkbox" name="" id="">Погоджуюся з розсилкою та приймаю <a style="text-decoration: solid; color: #2196F3;" href=""> Умови договору</a></label>
-                            <button type="submit" style="padding: 16px 52px ; font-size: 18px;">Відправити</button>
-                        </form>
-                    </div>
+            <button class="btn-open" data-modal-open>ЗАМОВИТИ ПОСЛУГУ</button>
+            <!-- <div class="backdrop is-hidden"  data-modal>
+                <div class="modal">
+                    
+                    <button style="background-color: transparent; border: rgba(0, 0, 0, 0.8); padding: 6px; color: #0B0E66;" class="btn" data-modal-close
+                    ><img  width="18" height="18" src="img/icons/cross.svg" alt=""></button>
+                    <form action="login">
+                        <label class="titleform" for="">Залиште свої дані, ми вам передзвонимо</label>
+                        <label for="">Ім'я <input type="text" ></label>
+                    
+                        <label  for="">Телефон<input type="text" ></label>
+                        <label for="">Пошта <input type="email"></label>
+                        <label for="">Коментар<textarea name="" id="" cols="30" rows="5"></textarea></label>
+                        <label class="Agree" for=""><input class="comment" type="checkbox" name="" id="">Погоджуюся з розсилкою та приймаю <a style="text-decoration: solid; color: #2196F3;" href=""> Умови договору</a></label>
+                        <button type="submit" style="padding: 16px 52px ; font-size: 18px;">Відправити</button>
+                    </form>
                 </div>
+            </div> -->
+            
+        </div>
                 
-            </div>
         </section>
         <section class="rules">
             <ul>
@@ -165,20 +165,18 @@
     <footer>
         
         <section class="footinfo">
-            <div>
-                <a class="logo" href="#"> 
-                    <span class="logo-web">Web</span>Studio
-                </a>
-                <address class="location">
-                    м. Київ, пр-т Лесі Українки, 26        
-                </address>
-                <address>
-                    info@devstudio.com
-                </address>
-                <address>
-                    tel:+380961111111
-                </address>
-                </div>
+            <a class="logo" href="#"> 
+                <span class="logo-web">Web</span>Studio
+            </a>
+            <address class="location">
+                м. Київ, пр-т Лесі Українки, 26        
+            </address>
+            <address>
+                info@devstudio.com
+            </address>
+            <address>
+                tel:+380961111111
+            </address>
         </section>
 
         <section class="contact">
@@ -189,6 +187,20 @@
                 <li><button> <img src="img/icons/facebook 1.svg" alt=""> </button></li>
                 <li><button> <img src="img/icons/linkedin 1.svg" alt=""> </button></li>
             </ul>
+        </section>
+
+        <section class="emailsend">
+            <p>Підпишіться на розсилку</p>
+            
+            <input class="email-int" type="text" placeholder="E-mail">
+             
+            <button class="email-int-submit">
+                <div>
+                    <p></p>
+                    <img src="./img/icons/icon-send.svg" alt="">
+                </div>
+            </button>
+           
         </section>
         
     </footer>
